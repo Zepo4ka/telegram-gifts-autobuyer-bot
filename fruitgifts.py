@@ -40,8 +40,8 @@ def main2():
     connection.close()
 
     user_states = {}
-
-    bot = telebot.TeleBot('8343270784:AAEtG67IYFqpZuJw5F_mAhk4qQO3-RBk3tE')
+    token = ""
+    bot = telebot.TeleBot(token)
 
     @bot.message_handler(commands=['start'])
     def send_welcome(message):
@@ -662,4 +662,5 @@ while True:
     try:
         main2()
     except:
+
         main2()
